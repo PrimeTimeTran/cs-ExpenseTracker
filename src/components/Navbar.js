@@ -5,7 +5,7 @@ import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 export default function Navbarr() {
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">CoderSchool Starter</Navbar.Brand>
+      <Navbar.Brand href="#home">Expense Tracker</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

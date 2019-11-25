@@ -12,6 +12,7 @@ function App() {
     { name: "Visa", cost: "23000000" },
     { name: "Gas", cost: "70000" }
   ]);
+
   const onSubmit = e => {
     e.preventDefault();
     setExpenses(expenses.concat(expense));
@@ -30,7 +31,7 @@ function App() {
           <Container>
             <Form onSubmit={onSubmit} onChange={onChange}>
               <Form.Group>
-                <Form.Label>Name</Form.Label>
+                <Form.Label>Expense:</Form.Label>
                 <Form.Control
                   name="name"
                   placeholder="Enter expense..."
@@ -40,7 +41,7 @@ function App() {
                   Groceries, Gas, etc.
                 </Form.Text>
 
-                <Form.Label>Cost</Form.Label>
+                <Form.Label>Total Cost:</Form.Label>
                 <Form.Control
                   name="cost"
                   placeholder="Enter cost..."
